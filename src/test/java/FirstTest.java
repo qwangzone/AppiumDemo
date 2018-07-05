@@ -4,6 +4,8 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
+
 public class FirstTest {
     //public static AndroidDriver driver;
     public static void main(String[] args) throws MalformedURLException,
@@ -30,7 +32,13 @@ public class FirstTest {
         String result = driver.findElement(By.id("com.android.calculator2:id/formula"))
                 .getText();
         System.out.println(result);
-        driver.quit();
+        List<WebElement> buttons = driver.findElements(
+                By.className("android.widget.Button"));
+        System.out.println(buttons.size()); // 计算总数
+        for (WebElement button : buttons) {
+            System.out.println(button.getText()); //获取每个元素上的文本
+            driver.quit();
+        }
     }
 }
 
