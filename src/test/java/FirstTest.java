@@ -32,10 +32,11 @@ public class FirstTest {
         String result = driver.findElement(By.id("com.android.calculator2:id/formula"))
                 .getText();
         System.out.println(result);
-        List<WebElement> buttons = driver.findElements(
-                By.className("android.widget.Button"));
+        //List buttons = driver.findElements(By.className("android.widget.Button"));
+        List<WebElement> buttons = driver.findElements(By.className("android.widget.Button"));
         System.out.println(buttons.size()); // 计算总数
         for (WebElement button : buttons) {
+            System.out.println(button);
             System.out.println(button.getText()); //获取每个元素上的文本
             driver.quit();
         }

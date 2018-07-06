@@ -1,3 +1,5 @@
+import org.openqa.selenium.WebElement;
+
 import java.util.List;
 
 public class ListLianxi {
@@ -8,6 +10,8 @@ public class ListLianxi {
         a[2] = 2;
         a[3] = 4;
         a[4] = 1;
+        int[] b = {1,2,3,4,5};
+
 
         // 打印所有元素
         for (int i=0;i<a.length;i++){
@@ -23,11 +27,11 @@ public class ListLianxi {
         System.out.println("元素之和为:"+ sum);
 
           // 查找最大元素
-                    int max = a[0];
-                    for(int i=0;i<a.length;i++){
-                        if (a[i]>max){
-                            max=a[i];
-                        }
+                        int max = a[0];
+                        for(int i=0;i<a.length;i++){
+                            if (a[i]>max){
+                                max=a[i];
+                            }
 
                     }
                     System.out.println("最大元素是:"+ max);
@@ -51,6 +55,18 @@ public class ListLianxi {
         for(int wq:a){
             System.out.print(wq+" ");
         }
+
+        //数组和字符串的转换
+        String str = "helloworld";
+        char[] data = str.toCharArray();// 将字符串转为数组
+        for (int x = 0; x < data.length; x++) {
+            System.out.print(data[x] + "  ");
+            data[x] -= 32;
+            System.out.print(data[x] + "  ");
+        }
+        System.out.println(new String(data)); //数组转为字符串
+
+
 
         //System.out.println(a);
         //System.out.println(b);
