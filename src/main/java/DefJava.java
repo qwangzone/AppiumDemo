@@ -1,4 +1,4 @@
-import org.apache.commons.collections.bag.SynchronizedSortedBag;
+
 
 public class DefJava {
     public static int max(int num1, int num2) {
@@ -45,6 +45,7 @@ public class DefJava {
 
     public static void main(String[] args) {
         System.out.println(max(1, 3.2));
+        System.out.println(max(1, 22));
         printGrade(90);
         nPrintln("xiaomi", 3);
     }
