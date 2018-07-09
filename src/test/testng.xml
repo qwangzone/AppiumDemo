@@ -32,10 +32,10 @@
             <!--<class name="test.sample.TagTest">-->
                 <!--<methods>-->
                     <!--<include name="testCase3"/>-->
-                    <!--<include name="testCase1"/>-->
-                    <!--<include name="testCase2"/>-->
-                <!--</methods>-->
-            <!--</class>-->
+        <!--<include name="testCase1"/>-->
+        <!--<include name="testCase2"/>-->
+        <!--</methods>-->
+        <!--</class>-->
         <!--</classes>-->
         <parameter name="add1" value="3"/>
         <parameter name="add2" value="2"/>
