@@ -1,4 +1,4 @@
-//package example;
+package test.sample;//package example;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.*;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -28,6 +28,11 @@ public class FirstTest {
         driver.findElementByAndroidUIAutomator("text(\"+\")").click();
         driver.findElementByAndroidUIAutomator("text(\"6\")").click();
         driver.findElementByAndroidUIAutomator("text(\"=\")").click();
+        driver.findElement(By.xpath("//android.widget.Button[contains(@text,'1')]")).click();
+        driver.findElement(By.xpath("//android.widget.Button[contains(@text,'6')]")).click();
+        driver.findElementByAccessibilityId("times").click();
+        driver.findElementByAndroidUIAutomator("index(7)").click();
+        driver.findElementByAndroidUIAutomator("description(\"equals\")").click();
         Thread.sleep(2000);
         String result = driver.findElement(By.id("com.android.calculator2:id/formula"))
                 .getText();
@@ -38,8 +43,9 @@ public class FirstTest {
         for (WebElement button : buttons) {
             System.out.println(button);
             System.out.println(button.getText()); //获取每个元素上的文本
-            driver.quit();
+
         }
+        driver.quit();
     }
 }
 
