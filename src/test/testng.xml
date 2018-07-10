@@ -20,7 +20,7 @@
                 <!--</methods>-->
             <!--</class>-->
         <!--</classes>-->
-        <!--根据标签筛选要运行用例-->
+        <!--根据标签筛选要运行的用例-->
 
         <!--<groups>-->
             <!--<run>-->
@@ -37,12 +37,12 @@
         <!--</methods>-->
         <!--</class>-->
         <!--</classes>-->
-        <parameter name="add1" value="3"/>
-        <parameter name="add2" value="2"/>
-        <parameter name="add3" value="5"/>
+        <!--<parameter name="add1" value="3"/>-->
+        <!--<parameter name="add2" value="2"/>-->
+        <!--<parameter name="add3" value="5"/>-->
         <classes>
-            <class name="test.sample.DataProviderTest"/>
-            <class name="test.sample.FixtureTest"/>
+            <class name="testcase.company.CalculatorTest"/>
+            <!--<class name="test.sample.FixtureTest"/>-->
         </classes>
 
     </test>

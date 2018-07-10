@@ -6,5 +6,6 @@ public class FirstTest2 {
     @Test
     public void testCase() {
         assertEquals(2 + 2, 4);
+
     }
 }

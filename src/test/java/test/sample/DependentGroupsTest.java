@@ -9,7 +9,7 @@ public class DependentGroupsTest {
     @Test(groups = {"funtest"})
     public void testAdd1(){
         System.out.println("before method========");
-        assertEquals(3+1,6);
+        assertEquals(3+1,4);
     }
     @Test(groups = {"funtest"})
     public void testAdd2(){
