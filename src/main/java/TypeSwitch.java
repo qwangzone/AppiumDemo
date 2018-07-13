@@ -19,5 +19,18 @@ public class TypeSwitch {
         System.out.println(b1);
         String s = "2";
 
+        //string字符串转为int
+            String i = "200";
+        //第一种方法
+        System.out.println(Integer.parseInt(i));
+        //第二种方法
+        System.out.println(Integer.valueOf(i).intValue());
+        //int转化为string
+        int wq = 3;
+        //第一种方法
+        System.out.println(String.valueOf(wq));
+        //第二种方法
+        System.out.println(Integer.toString(wq));
+
     }
 }

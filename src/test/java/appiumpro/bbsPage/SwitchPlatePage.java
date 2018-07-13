@@ -14,6 +14,11 @@ public class SwitchPlatePage {
         this.driver = driver;
     }
 
+    //首页按钮
+    public void indexButton(){
+        List<WebElement> button = this.driver.findElements(By.id(BUTTONS));
+        button.get(0).click();
+    }
     public String bbsTitle() {
 //            String title = this.driver.findElement(By.xpath("//android.widget.LinearLayout/android.support.v7.a.a\" +\n" +
 //                    "\".c[1]/android.widget.TextView")).getText();
