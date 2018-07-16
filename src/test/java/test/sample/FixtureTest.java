@@ -23,7 +23,7 @@ public class FixtureTest {
     public static void after(){
         System.out.println("------aftermethod");
     }
-    @Test()
+    @Test
     public void testcase1(){
         System.out.println("test case1");
     }
