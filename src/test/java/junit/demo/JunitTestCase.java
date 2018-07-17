@@ -1,10 +1,12 @@
+package junit.demo;
+
 import org.junit.*;
 
 import static org.junit.Assert.assertEquals;
 
-public class CountTest {
+public class JunitTestCase {
     @BeforeClass
-    public void setUp(){
+    public static void setUp(){
         System.out.println("start test========");
     }
     @Before
@@ -16,20 +18,23 @@ public class CountTest {
         System.out.println("method end");
     }
     @Test
-    @Ignore
     public void testAdd(){
         Count count = new Count();
-        int result = count.add(3,4);
-        assertEquals(result,7);
+        int result = count.add(3,3);
+        assertEquals(result,6);
     }
     @Test
     public void testDivi(){
         Count count = new Count();
-        int result = count.division(3,4);
-        assertEquals(result,0);
+        int result = count.division(4,2);
+        assertEquals(result,2);
+    }
+    @Test
+    public void testwq(){
+        assertEquals(2+2,4);
     }
     @AfterClass
-    public void tearDown(){
+    public static void tearDown(){
         System.out.println("end.........");
     }
 }
