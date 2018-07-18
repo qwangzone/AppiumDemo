@@ -1,13 +1,12 @@
 package junit5.demo;
 
-
 import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class JUnit5NewTests {
+class Junit5Tests {
     @BeforeEach
     @DisplayName("每条用例开始时执行")
     void start() {
@@ -31,15 +30,21 @@ class JUnit5NewTests {
         assertEquals(1, 2);
     }
 
-//    @Test
-//    @DisplayName("运行一组断言")
-//    void assertAllCase() {
-//        assertAll("person",
-//                () -> assertEquals(2,1+1),
-//                () -> assertTrue(1>0)
-//
-//        );
-//    }
+    @Test
+    @DisplayName("运行一组断言")
+    void assertAllCase() {
+        assertAll("person",
+                () -> assertEquals(2,1+1),
+                () -> assertTrue(1>0)
+
+        );
+    }
+
+    @Test
+    @DisplayName("描述测试用例╯°□°）╯")
+    void testWithDisplayName() {
+
+    }
 
     @Test
     @DisplayName("依赖注入1")
