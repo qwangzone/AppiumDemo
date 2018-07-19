@@ -29,12 +29,16 @@ public class SwitchPlateTest {
         sw.setUp();
 
         Thread.sleep(6000);
-        String wq = sw.switchPlatePage.bbsTitle();
-        Thread.sleep(6000);
+        String wq = sw.switchPlatePage.bbsTitle1();
+        Thread.sleep(3000);
         System.out.println(wq);
         Thread.sleep(3000);
-        sw.switchPlatePage.photographyButton();
-        Thread.sleep(8000);
+        String w = sw.switchPlatePage.bbsTitle2();
+        Thread.sleep(3000);
+        System.out.println(w);
+        sw.switchPlatePage.bbsTitle2Button();
+        Thread.sleep(3000);
+        sw.switchPlatePage.bbsTitle1Button();
     }
 
 }
