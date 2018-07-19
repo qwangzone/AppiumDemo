@@ -42,7 +42,7 @@ public class SwitchPlatePage {
     public void bbsTitle2Button(){
         WebElement name = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]"));
         TouchAction action = new TouchAction(this.driver);
-        action.tap().perform().release();
+        //action.tap().perform().release();
     }
      // 摄影按钮
     public void photographyButton() {
