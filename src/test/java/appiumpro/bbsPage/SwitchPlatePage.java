@@ -28,21 +28,21 @@ public class SwitchPlatePage {
     }
 
     //首页热帖标题
-    public String bbsTitle2(){
-        String title = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[2]/android.widget.TextView")).getText();
-        return title;
-    }
+        public String bbsTitle2(){
+            String title = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[2]/android.widget.TextView")).getText();
+            return title;
+        }
 
-    //精选按钮
-    public void bbsTitle1Button(){
-        this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]")).click();
-    }
+        //精选按钮
+        public void bbsTitle1Button(){
+            this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]")).click();
+        }
 
-    //热帖按钮
-    public void bbsTitle2Button(){
-        WebElement name = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]"));
-        TouchAction action = new TouchAction(this.driver);
-        //action.tap().perform().release();
+        //热帖按钮
+        public void bbsTitle2Button(){
+            WebElement name = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]"));
+            TouchAction action = new TouchAction(this.driver);
+            //action.tap().perform().release();
     }
      // 摄影按钮
     public void photographyButton() {

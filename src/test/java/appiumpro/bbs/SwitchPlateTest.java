@@ -13,21 +13,13 @@ public class SwitchPlateTest {
     private  SwitchPlatePage switchPlatePage;
 
     public void setUp() throws MalformedURLException {
-        DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName", "MAX");
-        capabilities.setCapability("automationName", "Appium");
-        capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("platformVersion", "7.0");
-        capabilities.setCapability("noReset",true);
-        capabilities.setCapability("appPackage", "com.meizu.mzbbs");
-        capabilities.setCapability("appActivity", ".ui.LoadingActivity");
-        this.driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"),capabilities);
-        this.switchPlatePage = new SwitchPlatePage(driver);
+        MyDriver myDriver = new MyDriver();
+        this.driver = myDriver.mydriver();
+        this.switchPlatePage = new SwitchPlatePage(this.driver);
     }
     public static void main(String[] args) throws MalformedURLException, InterruptedException {
         SwitchPlateTest sw = new SwitchPlateTest();
         sw.setUp();
-
         Thread.sleep(6000);
         String wq = sw.switchPlatePage.bbsTitle1();
         Thread.sleep(3000);
@@ -36,9 +28,9 @@ public class SwitchPlateTest {
         String w = sw.switchPlatePage.bbsTitle2();
         Thread.sleep(3000);
         System.out.println(w);
-        sw.switchPlatePage.bbsTitle2Button();
-        Thread.sleep(3000);
-        sw.switchPlatePage.bbsTitle1Button();
+//        sw.switchPlatePage.bbsTitle2Button();
+//        Thread.sleep(3000);
+//        sw.switchPlatePage.bbsTitle1Button();
     }
 
 }
