@@ -12,7 +12,6 @@ public class ListLianxi {
         a[4] = 1;
         int[] b = {1,2,3,4,5};
 
-
         // 打印所有元素
         for (int i=0;i<a.length;i++){
             System.out.println(a[i]);

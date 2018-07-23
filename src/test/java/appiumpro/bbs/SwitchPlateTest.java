@@ -28,6 +28,7 @@ public class SwitchPlateTest {
         String w = sw.switchPlatePage.bbsTitle2();
         Thread.sleep(3000);
         System.out.println(w);
+        sw.switchPlatePage.photographyButton();
 //        sw.switchPlatePage.bbsTitle2Button();
 //        Thread.sleep(3000);
 //        sw.switchPlatePage.bbsTitle1Button();

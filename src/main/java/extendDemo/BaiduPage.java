@@ -21,11 +21,11 @@ public class BaiduPage extends BasePage {
     }
 
     //搜索方法
-        public void search(String input) throws InterruptedException {
-            System.out.println(this.url);
-            this.open(url);
-            System.out.println(this.url);
-            this.input().sendKeys(input);
-            this.click_button().click();
+    public void search(String input) throws InterruptedException {
+        System.out.println(this.url);
+        this.open(url);
+        System.out.println(this.url);
+        this.input().sendKeys(input);
+        this.click_button().click();
     }
 }

@@ -21,6 +21,7 @@ public class ListTest {
         String[] wq = {"www","baidu","com"};
         int[] ww = new int[5];
         int[] ww1 = {2,3,1,8,6,4,9,10};
+
         //填充数组
         Arrays.fill(ww,5);
         Arrays.fill(wq,"p");

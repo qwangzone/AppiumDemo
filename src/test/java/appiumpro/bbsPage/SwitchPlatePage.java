@@ -5,6 +5,7 @@ import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+
 import java.util.List;
 
 public class SwitchPlatePage {
@@ -16,10 +17,11 @@ public class SwitchPlatePage {
     }
 
     //首页按钮
-    public void indexButton(){
+    public void indexButton() {
         List<WebElement> button = this.driver.findElements(By.id(BUTTONS));
         button.get(0).click();
     }
+
     //首页精选标题
     public String bbsTitle1() {
         String title = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]/android.widget.TextView")).getText();
@@ -28,31 +30,36 @@ public class SwitchPlatePage {
     }
 
     //首页热帖标题
-        public String bbsTitle2(){
-            String title = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[2]/android.widget.TextView")).getText();
-            return title;
-        }
-
-        //精选按钮
-        public void bbsTitle1Button(){
-            this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]")).click();
-        }
-
-        //热帖按钮
-        public void bbsTitle2Button(){
-            WebElement name = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]"));
-            TouchAction action = new TouchAction(this.driver);
-            //action.tap().perform().release();
+    public String bbsTitle2() {
+        String title = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[2]/android.widget.TextView")).getText();
+        return title;
     }
-     // 摄影按钮
+
+    //精选按钮
+    public void bbsTitle1Button() {
+        this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]")).click();
+    }
+
+    //热帖按钮
+    public void bbsTitle2Button() {
+        WebElement name = this.driver.findElement(By.xpath("//android.support.v7.app.a.c[1]"));
+        TouchAction action = new TouchAction(this.driver);
+        //action.tap().perform().release();
+    }
+
+    // 摄影按钮
     public void photographyButton() {
-        /*List<WebElement> button = this.driver.findElements(By.id(BUTTONS));
-        for(WebElement bt:button){
-            System.out.println(bt);
+        List<WebElement> buttons = this.driver.findElements(By.id("com.meizu.mzbbs:id/hb"));
+        System.out.println(buttons.size());
+        for(WebElement button:buttons){
+            System.out.println(button);
         }
-        button.get(0).click();*/
+        WebElement b = buttons.get(1);
+        TouchAction action = new TouchAction(this.driver);
+        //action.press(b).release().perform();
+        buttons.get(2).click();
+        System.out.println(buttons.get(1));
     }
-
     //摄影标题
     public String photographyTitle() {
         String title = this.driver.findElement(By.xpath("android.widget.LinearLayout/" +
