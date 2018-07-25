@@ -31,6 +31,7 @@ public class TypeSwitch {
         System.out.println(String.valueOf(wq));
         //第二种方法
         System.out.println(Integer.toString(wq));
+        System.out.println(new String());
 
     }
 }

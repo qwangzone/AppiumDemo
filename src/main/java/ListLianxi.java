@@ -58,12 +58,14 @@ public class ListLianxi {
         //数组和字符串的转换
         String str = "helloworld";
         char[] data = str.toCharArray();// 将字符串转为数组
+        System.out.println(new String(data));
         for (int x = 0; x < data.length; x++) {
             System.out.print(data[x] + "  ");
             data[x] -= 32;
             System.out.print(data[x] + "  ");
         }
         System.out.println(new String(data)); //数组转为字符串
+
 
 
 
