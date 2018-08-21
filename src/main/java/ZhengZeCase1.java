@@ -6,5 +6,8 @@ public class ZhengZeCase1 {
         String pattern = ".*runoob.*";
         boolean isMatch = Pattern.matches(pattern,content);
         System.out.println(isMatch);
+        String a = "您好";
+        String b = "您好，王大帅用户";
+        System.out.println(b.contains(a));
     }
 }

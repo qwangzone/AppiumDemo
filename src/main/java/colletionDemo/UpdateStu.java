@@ -10,8 +10,9 @@ public class UpdateStu implements Comparable<Object>{
 
     public int compareTo(Object o ){
         UpdateStu upstu = (UpdateStu)o;
-        int result = id > upstu? 1 : (id==upstu.id ? 0:-1);
-        return result;
+        //int result = id > upstu? 1 : (id==upstu.id ? 0:-1);
+        //return result;
+        return 1;
     }
 
     public String getName(){
